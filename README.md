@@ -11,7 +11,7 @@ https://startbootstrap.com/template-overviews/agency/
 
 サイトのAboutの部分をJSON化してみた。 
 ---------------------------------
-liの部分をすべて削除し、中身をdata.jsonに格納。
+liの部分をすべて削除し、中身をdata.jsonに格納。  
     {
     "id": 1,
     "class": "",
