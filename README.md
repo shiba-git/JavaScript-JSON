@@ -23,11 +23,11 @@ liの部分をすべて削除し、中身をdata.jsonに格納。
     },  
 ```
 
-##XMLHttpRequestを使い、data.jsonを取得  
+XMLHttpRequestを使い、data.jsonを取得  
 ---------------------------------
 `req.open('GET','https://jsontest-shiba0405.c9users.io/startbootstrap-agency-gh-pages/data.json');`
 
-##JavaScriptのappend()を使い、HTML生成。
+JavaScriptのprepend()を使い、HTML生成。
 ---------------------------------
 ```
     timeline.prepend(  
@@ -46,4 +46,8 @@ liの部分をすべて削除し、中身をdata.jsonに格納。
         '</div>' +  
       '</li>'   
       );  
-```
+```  
+  
+参考  
+---------------------------------
+https://app.codegrid.net/entry/js-drill-1  
