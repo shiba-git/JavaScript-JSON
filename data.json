@@ -1,18 +1,11 @@
 [
+	
 	{
-		"id": 1,
-		"class": "",
-		"imgPath": "img/about/1.jpg",
-		"time": "2009-2011",
-		"title": "Our Humble Beginnings",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-	},
-	{
-		"id": 2,
+		"id": 4,
 		"class": "timeline-inverted",
-		"imgPath": "img/about/2.jpg",
-		"time": "March 2011",
-		"title": "An Agency is Born",
+		"imgPath": "img/about/4.jpg",
+		"time": "July 2014",
+		"title": "Phase Two Expansion",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 	},
 	{
@@ -24,11 +17,19 @@
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 	},
 	{
-		"id": 4,
+		"id": 2,
 		"class": "timeline-inverted",
-		"imgPath": "img/about/4.jpg",
-		"time": "July 2014",
-		"title": "Phase Two Expansion",
+		"imgPath": "img/about/2.jpg",
+		"time": "March 2011",
+		"title": "An Agency is Born",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+	},
+	{
+		"id": 1,
+		"class": "",
+		"imgPath": "img/about/1.jpg",
+		"time": "2009-2011",
+		"title": "Our Humble Beginnings",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 	}
 ]

@@ -654,40 +654,68 @@
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
 
-      <script type="text/javascript">
+  <script type="text/javascript">
     
     var req = new XMLHttpRequest();
     req.open('GET','https://jsontest-shiba0405.c9users.io/startbootstrap-agency-gh-pages/data.json');
     //req.responseType = 'json';
     req.send();
+    
+    
    
     req.onload = function(){
       var json = JSON.parse(req.responseText);
       
+      json.forEach(function(w){
+        
+        function analized(v){
+          return v.split(/-|\s/);      
+        } 
+        w.time = analized(w.time);
+        
+      });
+      
+      month = ['January',	'February', 'March','April','May','June','July', 'August', 'September', 'October', 'November', 'December'];
+      
+      json.sort(
+        function(a,b){
+          yearDiff = a.time[1] - b.time[1];
+          if(yearDiff) return yearDiff;
+          return month.indexOf(a.time[0] - b.time[0]);
+          
+        }
+      ); 
+      json.reverse();
+      console.log(json);
       var timeline = $('.timeline');
       json.forEach(function(item){
   
-      timeline.prepend(
-      '<li class="' + item.class + '">' +
-        '<div class="timeline-image">' +
-          '<img class="rounded-circle img-fluid" src="' + item.imgPath + '" alt="">' + 
-        '</div>' +
-        '<div class="timeline-panel">' + 
-          '<div class="timeline-heading">' + 
-            '<h4>' + item.time + '</h4>' + 
-            '<h4 class="subheading">' + item.title + '</h4>' +
+        timeline.prepend(
+        '<li class="' + item.class + '">' +
+          '<div class="timeline-image">' +
+            '<img class="rounded-circle img-fluid" src="' + item.imgPath + '" alt="">' + 
           '</div>' +
-          '<div class="timeline-body">' +
-            '<p class="text-muted">' + item.description + '</p>' + 
+          '<div class="timeline-panel">' + 
+            '<div class="timeline-heading">' + 
+              '<h4>' + item.time + '</h4>' + 
+              '<h4 class="subheading">' + item.title + '</h4>' +
+            '</div>' +
+            '<div class="timeline-body">' +
+              '<p class="text-muted">' + item.description + '</p>' + 
+            '</div>' +
           '</div>' +
-        '</div>' +
-      '</li>' 
-      );
-    });
+        '</li>' 
+        );
+      });
     }
   
     
-
+    function yearSort(sortType, array){
+        
+      if(sortType === "desc"){
+        
+      }
+    }
     
     
   </script>
