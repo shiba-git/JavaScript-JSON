@@ -48,6 +48,22 @@ JavaScriptのprepend()を使い、HTML生成。
       );  
 ```  
   
+追加 About部分にsortを追加
+---------------------------------
+jsonをバラバラにしてから、json.timeをソートで昇順にした。
+```  
+month = ['January',	'February', 'March','April','May','June','July', 'August', 'September', 'October', 'November', 'December'];
+      
+      json.sort(
+        function(a,b){
+          yearDiff = a.time[1] - b.time[1];
+          if(yearDiff) return yearDiff;
+          return month.indexOf(a.time[0] - b.time[0]);
+          
+        }
+      ); 
+```  
+  
 参考  
 ---------------------------------
 https://app.codegrid.net/entry/js-drill-1  
